@@ -1,0 +1,7 @@
+body {
+	background-color: pink;
+}
+
+/* Format écran min 1280px */
+@media screen and (max-width: 1200px)
+
