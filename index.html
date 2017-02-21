@@ -7,12 +7,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<h1>Thomas BLIN</h1>
 </div>
+
+<style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        #cookies {
+            padding: 20px 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #FFFFFF;
+        }
+
+        #cookies.hide {
+            display: none;
+        }
+         </style>
 </head>
+
 <body>
- 
+
+<div id="cookies">
+    Hi, ce site Web utilise les cookies pour tout savoir sur vous !!! Et c'est tout !
+    <button type="button">&times;</button>
+</div>
+
+
+<script type="application/javascript">
+    var button = document.querySelector('button');
+
+    button.onclick = function() {
+        var cookiesDiv = document.getElementById('cookies');
+
+        cookiesDiv.className += ' hide';
+    }
+</script>
+ <img src="http://www.ouest-france.fr/sites/default/files/styles/image-640x360-p/public/2016/07/20/durant-lete-thomas-accueille-les-visiteurs.jpg?itok=6qfubGQs">
 <h1>BIENVENUE</h1>
 
 <p>Bienvenue sur mon site</p>
+
+
 
 </script>
 </body>
