@@ -1,7 +1,165 @@
 body {
-	background-color: pink;
+	background-color:#1592cc;
+	background-repeat:repeat scroll;
+	background-size:cover;
+  	font-family: 'UrbanEleganceRegular';
+   	font-weight: normal;
+   	font-style: normal; 
+  	background-size: cover;
+  	height: 100vh;
+  	color: white;
 }
 
-/* Format écran min 1280px */
-@media screen and (max-width: 1200px)
+/* Navigation */
 
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+#titre_principal{
+	display: flex;
+	flex-direction: column;
+}
+
+#bloc_page{
+	width: 900px;
+	margin: auto;
+}
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_perso
+{
+    text-align: center;
+}
+
+#photo_perso img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
+@media screen and (max-width: 1280px)
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+
+/* Sur les téléviseurs */
+
+@media tv
+
+
+/* Sur tous types d'écrans orientés verticalement */
+
+@media all and (orientation: portrait)
+
+/* Paragraphes en bleu par défaut */
+
+p
+
+{
+
+    color: blue;
+
+}
+
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+
+@media screen and (max-width: 1024px)
